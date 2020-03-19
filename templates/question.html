@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{survey_question.question}}
+<br>
+<br>
+<form action="/answer" name="Choice" method="POST">
+  <label for="Yes">Yes</label>
+  <input type="radio" name="Choice" id="Yes" value="Yes"><br>
+  <label for="No">No</label>
+  <input type="radio" name="Choice" id="No" value="No"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+{% endblock %}
