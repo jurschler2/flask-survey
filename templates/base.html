@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Surveys</h1>
+
+  <h3>{{survey_title}}</h3>
+  <h5><i>{{survey_instructions}}</i></h5>
+
+  {% for q_inst in survey_questions %}
+      <ul>
+    {{q_inst.question}}
+      </ul>
+  {% endfor %}
+</body>
+</html>
